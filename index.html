@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/estilo.css">
+    <title>afiliación</title>
+</head>
+<body>
+    <h1>Vení al Gym!</h1>
+    
+    <section>
+        <form action="">
+            <fieldset>
+                <legend>🙋‍♂️ Datos Personales 👀</legend>
+                <label for="name">Nombre:*</label>
+                <input type="text" id="name" name="name" required><br>
+                <label for="surname">Apellido:*</label>
+                <input type="text" id="surname" name="surname" required><br>
+                <label for="numberDocument">Documento:*</label>
+                <input type="text" id="numberDocument" name="numberDocument" required><br>
+                <label for="nacionality">Nacionalidad:*</label>
+                <select name="nacionality" id="nacionality" required>
+                    <option value="" disabled selected>- Seleccionar -</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Brasileña">Brasileña</option>
+                    <option value="Uruguaya">Uruguaya</option>
+                    <option value="Otra">Otra</option>
+                </select><br>
+                <label for="about">Contanos un poco de vos...</label>
+                <textarea id="about" name="about"></textarea><br>
+                <label>Sexo:*</label> <br>
+                <input type="radio" id="femenino" name="sexo" value="femenino">
+                <label for="femenino">Femenino</label>
+                
+                <input type="radio" id="masculino" name="sexo" value="masculino">
+                <label for="masculino">Masculino</label>
+                
+                <input type="radio" id="otro" name="sexo" value="otro">
+                <label for="otro">Otro</label>
+            </fieldset>
+            
+            <fieldset> 
+                <legend>📱datos de Contacto 📧</legend>
+                <label for="telefono">teléfono:</label> 
+                <input type="tel"><br>
+                <label for="email">direccion de correo electronico:*</label>
+                <input type="email" name="" id="email">
+            </fieldset>
+            <fieldset>
+               <legend>🚴 actividades 🤸</legend> 
+               <label for="palermo">sede palermo:</label><br>
+                <input type="checkbox">basquet
+                <input type="checkbox">Boxeo
+                <input type="checkbox">Futbol
+                <input type="checkbox">Tenis
+                <br>
+                <label for="rosario">sede rosario:</label><br>
+                <input type="checkbox">basquet
+                <input type="checkbox">Boxeo
+                <input type="checkbox">Futbol
+                <input type="checkbox">Tenis
+                    </fieldset>
+                <div class="botText">
+                <input type="checkbox" name="" id="" >Acepto las condiciones*
+                <br>
+                <input type="checkbox" name="" id="">deseo recibir novedades
+                <p>*: campo obligatorio</p>
+                </div>
+            <div>
+                <input type="button" value="Iniciar afiliciación">
+                
+                <input type="reset" value="Restablecer">
+            </div>
+            </form>
+    </section>
+        
+</body>
+</html>
