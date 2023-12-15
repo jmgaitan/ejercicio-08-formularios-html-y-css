@@ -8,6 +8,9 @@ body{
     background-color: #1f2023;
     color: white;
 }
+h1{
+    text-align: center;
+}
 fieldset {
     background-color: #d6e2de;
     color: black;
@@ -22,7 +25,7 @@ legend {
     font-weight: bold;
 }
 
-label{
+label {
     display: block;
     text-align: center;
 }
