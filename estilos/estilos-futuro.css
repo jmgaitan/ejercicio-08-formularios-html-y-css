@@ -1,101 +1,145 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
 body {
     color: #cfd2d6;
     font-family: 'Chivo Mono', monospace;
     padding: 10px;
     background: radial-gradient(ellipse 300% 100% at center top,#000000 20%, rgb(136, 22, 197) 80%,#ea8ff4 90%, #ffffff 100%);
-    margin: 25px;
-    padding: 25px;
+    margin: 20px;
+    padding: 20px;
+    background-repeat: no-repeat;
     
 }
 
 h1 {
     color: #4fd1c5;
     text-align: center;
-    padding-bottom: 5%;
+    padding-bottom: 20px;
     font-family: 'Helvetica Neue', sans-serif;
+    font-size: 70px;
 }
 
 section {
-    padding: 20px;
+    display: flex;
+    justify-content: center;
     border-radius: 8px;
-    background-color: #161d2f;
-    margin: 20px;
+    padding-top: 25px;
+    width: 100%;
+    
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: #121927;
+    height: 150%;
+    height: 150%;
     padding: 10px;
-    margin-right: 10px;
+    border-radius: 30px;
+    animation: neon 5s ease infinite alternate;
 }
 
 @keyframes neon {
     25% {
-        box-shadow: 0 0 5px #08f, 0 0 10px #08f, 0 0 15px #08f, 0 0 20px #0ff, 0 0 35px #0ff, 0 0 40px #0ff, 0 0 50px #0ff, 0 0 75px #0ff;
+        box-shadow: 0 0 5px #08f, 0 0 10px #08f, 0 0 15px #08f, 0 0 20px #0ff, 0 0 35px #0ff, 0 0 40px #0ff, 0 0 50px #0ff, 0 0 100px #0ff;
     }
     50% {
-        box-shadow: 0 0 5px rgb(89, 103, 254), 0 0 10px rgb(65, 14, 247), 0 0 15px rgb(59, 11, 233), 0 0 20px rgb(252, 10, 252), 0 0 35px rgb(196, 9, 237), 0 0 40px rgb(221, 16, 244), 0 0 50px rgb(225, 32, 255), 0 0 75px rgb(242, 0, 255);
+        box-shadow: 0 0 5px rgb(89, 103, 254), 0 0 10px rgb(65, 14, 247), 0 0 15px rgb(59, 11, 233), 0 0 20px rgb(252, 10, 252), 0 0 35px rgb(196, 9, 237), 0 0 40px rgb(221, 16, 244), 0 0 50px rgb(225, 32, 255), 0 0 100px rgb(242, 0, 255);
     }
     90% {
-        box-shadow: 0 0 5px #08f, 0 0 10px #08f, 0 0 15px #08f, 0 0 20px #0ff, 0 0 35px #0ff, 0 0 40px #0ff, 0 0 50px #0ff, 0 0 75px #0ff;
+        box-shadow: 0 0 5px #08f, 0 0 10px #08f, 0 0 15px #08f, 0 0 20px #0ff, 0 0 35px #0ff, 0 0 40px #0ff, 0 0 50px #0ff, 0 0 95px #0ff;
     }
 }
 
-form {
-    background-color: #121927;
-    padding: 10px;
-    border-radius: 30px;
-    position: relative;
-    animation: neon 5s ease infinite alternate;
-}
 fieldset {
-
-    border: 1px solid transparent;
-    background-color: #121927;
-    padding: 5px;
-    border-radius: 5px;
-    position: relative;
-}
-
+        border: 10px solid transparent;
+        background-color: #121927;
+        padding: 5px;
+        border-radius: 5px;
+        }
 legend {
-    color: #ff6f91;
-    font-weight: bold;
-    text-align: center;
-}
-
+        color: #ff6f91;
+        font-weight: bold;
+        text-align: center;
+        }
 label {
-    color: #7f8fa6;
-    display: block;
-    margin-bottom: 5px;
-}
+        color: #7f8fa6;
+        display: block;
+        margin-bottom: 5px;
+    }
 
 input[type="text"],input[type="email"],input[type="tel"],textarea {
-    width: 90%;
-    padding: 5% 5% 5% 5%;
+    width: 95%;
+    padding: 5px 5px 5px 5px;
     margin: 5px;
     border: 1px solid #2e3850;
     background-color: #0a0f1d;
     color: #cfd2d6;
     border-radius: 10px;
 }
+
 select {
-    width: 100%;
-    padding: 10px;
-    margin: 5px;
+    width: 95%;
+    padding: 5px;
+    margin-left: 10px;
     border: 1px solid #2e3850;
     background-color: #0a0f1d;
     color: #cfd2d6;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 input[type="radio"],input[type="checkbox"] {
     margin-right: 10px;
 }
 
+.inputs{
+    align-items: center;
+    padding: 0%;
+    display: flex;
+    flex-direction: column;    
+}
+
 input[type="button"],input[type="reset"] {
     background-color: #4fd1c5;
     color: #0a0f1d;
     border: none;
-    padding: 10px 20px;
+    padding: 10px;
     border-radius: 5px;
     cursor: pointer;
     margin-top: 10px;
+    height: 2rem;
+    width: 10rem;
+
 }
+
+.sede-actividades >label,input[type="checkbox"] { 
+    display: inline; /* Elimina el bloque de display por defecto */
+}
+
+
+input[type="checkbox"] {
+    margin-right: 5px; /* Espacio a la derecha del checkbox */
+}
+
+.sede-actividades br {
+    display: none;
+}
+
+.selectSexo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.labelSexo {
+    margin-right: 10px;
+}
+.labelSexo ::first-letter{
+    text-transform: uppercase;
+}
+
 
 input[type="button"]:hover,input[type="reset"]:hover {
     background-color: #3fb5a3;
@@ -105,4 +149,8 @@ input[type="button"]:hover,input[type="reset"]:hover {
     color: #7f8fa6;
 }
 
-
+.botText div {
+    margin-left: 5px;
+    display: flex;
+    flex-direction: row;
+}
