@@ -6,15 +6,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="estilos/estilo.css"> -->
-    <link rel="stylesheet" href="estilos/estilos-futuro.css">
+    <link rel="stylesheet" href="estilos/estilo.css">
+    <!-- <link rel="stylesheet" href="estilos/estilos-futuro.css"> -->
     <!-- <link rel="stylesheet" href="estilos/estilos-retro.css">  -->
     
     <title>afiliación</title>
 </head>
 <body>
-
-    <h1>Vení al Gym! 💪</h1>
+    <div class="encabezado">
+         <h1>Vení al Gym! 💪</h1>
+    </div>
 
     <section>
         <form action="">
@@ -50,34 +51,35 @@
             <fieldset> 
                 <legend>📱 Datos de Contacto 📧</legend>
                 <label for="telefono">Teléfono:</label> 
-                <input type="tel" id="telefono" name="telefono"><br>
+                <input type="tel" id="telefono" name="telefono" placeholder="Código de área y número"><br>
                 <label for="email">Dirección de correo electrónico:*</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" placeholder="Ej: mail@mail.com" required>
             </fieldset>
 
             <fieldset class="class-sedes" >
                 <legend>🚴 Actividades 🤸</legend>
-                <div class="sede-actividades">
-                    <label for="palermo">Sede Palermo:</label><br>
+                <p>Por favor, indicá cuáles actividades te interesan.</p>
+                <p> Sede Palermo: </p>
+                <div class="sede-actividades"> 
                     <input type="checkbox" id="basquetPalermo" name="actividadesPalermo" value="Basquet">
-                    <label for="basquetPalermo">Basquet</label><br>
+                    <label for="basquetPalermo">Basquet</label>
                     <input type="checkbox" id="boxeoPalermo" name="actividadesPalermo" value="Boxeo">
-                    <label for="boxeoPalermo">Boxeo</label><br>
+                    <label for="boxeoPalermo">Boxeo</label>
                     <input type="checkbox" id="futbolPalermo" name="actividadesPalermo" value="Futbol">
-                    <label for="futbolPalermo">Futbol</label><br>
+                    <label for="futbolPalermo">Futbol</label>
                     <input type="checkbox" id="tenisPalermo" name="actividadesPalermo" value="Tenis">
-                    <label for="tenisPalermo">Tenis</label><br>
+                    <label for="tenisPalermo">Tenis</label>
                 </div>
+                <p>Sede Rosario:</p>
                 <div class="sede-actividades">
-                    <label for="rosario">Sede Rosario:</label><br>
                     <input type="checkbox" id="basquetRosario" name="actividadesRosario" value="Basquet">
-                    <label for="basquetRosario">Basquet</label><br>
+                    <label for="basquetRosario">Basquet</label>
                     <input type="checkbox" id="boxeoRosario" name="actividadesRosario" value="Boxeo">
-                    <label for="boxeoRosario">Boxeo</label><br>
+                    <label for="boxeoRosario">Boxeo</label>
                     <input type="checkbox" id="futbolRosario" name="actividadesRosario" value="Futbol">
-                    <label for="futbolRosario">Futbol</label><br>
+                    <label for="futbolRosario">Futbol</label>
                     <input type="checkbox" id="tenisRosario" name="actividadesRosario" value="Tenis">
-                    <label for="tenisRosario">Tenis</label><br>
+                    <label for="tenisRosario">Tenis</label>
                 </div>    
             </fieldset>
             
