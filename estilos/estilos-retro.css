@@ -16,6 +16,9 @@ html {
     100%*/
     ); 
 }
+menu{
+    display:flex;
+}
 
 
 form{
@@ -43,3 +46,4 @@ legend{
     font-size: 20px;
 
 }
+

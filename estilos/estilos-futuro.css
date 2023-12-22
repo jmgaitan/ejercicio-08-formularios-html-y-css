@@ -13,6 +13,7 @@ body {
     
 }
 
+
 h1 {
     color: #4fd1c5;
     text-align: center;
@@ -46,7 +47,7 @@ form {
         box-shadow: 0 0 5px #08f, 0 0 10px #08f, 0 0 15px #08f, 0 0 20px #0ff, 0 0 35px #0ff, 0 0 40px #0ff, 0 0 50px #0ff, 0 0 100px #0ff;
     }
     50% {
-        box-shadow: 0 0 5px rgb(89, 103, 254), 0 0 10px rgb(65, 14, 247), 0 0 15px rgb(59, 11, 233), 0 0 20px rgb(252, 10, 252), 0 0 35px rgb(196, 9, 237), 0 0 40px rgb(221, 16, 244), 0 0 50px rgb(225, 32, 255), 0 0 100px rgb(242, 0, 255);
+        box-shadow: 0 0 5px #5967fe, 0 0 10px rgb(65, 14, 247), 0 0 15px rgb(59, 11, 233), 0 0 20px rgb(252, 10, 252), 0 0 35px rgb(196, 9, 237), 0 0 40px rgb(221, 16, 244), 0 0 50px rgb(225, 32, 255), 0 0 100px rgb(242, 0, 255);
     }
     90% {
         box-shadow: 0 0 5px #08f, 0 0 10px #08f, 0 0 15px #08f, 0 0 20px #0ff, 0 0 35px #0ff, 0 0 40px #0ff, 0 0 50px #0ff, 0 0 95px #0ff;
@@ -102,7 +103,7 @@ input[type="radio"],input[type="checkbox"] {
 }
 
 input[type="button"],input[type="reset"] {
-    background-color: #4fd1c5;
+    background-color: #5967fe;
     color: #0a0f1d;
     border: none;
     padding: 10px;
@@ -111,7 +112,7 @@ input[type="button"],input[type="reset"] {
     margin-top: 10px;
     height: 2rem;
     width: 10rem;
-
+    font-size: 16px;
 }
 
 .sede-actividades >label,input[type="checkbox"] { 
@@ -143,6 +144,14 @@ input[type="checkbox"] {
 
 input[type="button"]:hover,input[type="reset"]:hover {
     background-color: #3fb5a3;
+    background: #03e9f4;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 100px #03e9f4;
+    
 }
 
 .botText {
