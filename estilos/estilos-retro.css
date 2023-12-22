@@ -1,12 +1,45 @@
-body {
+html {
     font-family: 'Arial', sans-serif;
-    color: #333;
-    background-color: #eaeaea;
     margin: 0;
     padding: 0;
+    background: linear-gradient(to right, 
+    #155f7a 0% 5%,
+    #ffefce 30% 25%,
+    #ec7b1d 45%,
+    #f74a00 50%,
+    #131723 55% 70%,
+    #49aec0 75%,
+    #16607b 80%,
+    #003649 86% 100%
+    /* ,80%,
+    90%,
+    100%*/
+    ); 
 }
 
-h1 {
+
+form{
+    background-color: #f1e8c7;
+    border-top: 20px;
+    border-right: 9px ;
+    border-bottom: 15px;
+    border-left: 25px;
+    border-color: #fcf1f0 #fcf1f0;
+    border-style: outset;
+    padding: 20px;
+    margin: 10px;
     display: flex;
-    min-height: 50vh;
+    justify-content: center;
+    align-items: start;
+    flex-wrap: wrap;
+}
+
+fieldset {
+    
+}
+
+legend{
+    text-align: center;
+    font-size: 20px;
+
 }
